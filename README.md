@@ -14,7 +14,7 @@ The project follows the recommended Ansible directory structure:
 ```
 ansible-playbook-skeleton/
 ├── roles/              # Directory for role definitions
-│   ├── myproject/   # Example role
+│   ├── myproject/      # Example role
 │   │   ├── tasks/      # Role tasks
 │   │   ├── handlers/   # Role handlers
 │   │   ├── templates/  # Jinja2 templates
@@ -29,7 +29,7 @@ ansible-playbook-skeleton/
 ├── playbooks/          # Playbook YAML files
 ├── ansible.cfg         # Ansible configuration file
 ├── requirements.yml    # Role dependencies
-|── myproject.yml    # Role dependencies
+|── myproject.yml       # Role dependencies
 ├── README.md           # Project documentation
 ```
 
