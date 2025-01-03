@@ -1,0 +1,63 @@
+---
+- name: ---- Create roots directory ----
+  ansible.builtin.file:
+    path: "{{ ansible_root }}/{{ project_name }}/{{ item }}"
+    state: directory
+    mode: '0755'
+  with_items:
+    - inventories
+    - group_vars
+    - host_vars
+    - playbooks
+  tags: [Create roots directory]
+
+- name: ---- Create Project inventories hosts file ----
+  ansible.builtin.file:
+    path: "{{ ansible_root }}/{{ project_name }}/inventories/{{ item }}"
+    state: touch
+    mode: '0644'
+  with_items:
+    - hosts
+    - production
+    - staging
+  tags: [create_inventories_hosts]
+
+- name: ---- Create Project yml ----
+  ansible.builtin.file:
+    path: "{{ ansible_root }}/{{ project_name }}/{{ item }}"
+    state: touch
+    mode: '0644'
+  with_items:
+    - "{{ project_name }}.yml"
+    - ansible.cfg
+    - README.md
+    - requirements.yml
+  tags: [create_project_yml]
+
+- name: ---- Create 7 directory ----
+  ansible.builtin.file:
+    path: "{{ ansible_root }}/{{ project_name }}/roles/{{ project_name }}/{{ item }}"
+    state: directory
+    mode: '0755'
+  with_items:
+    - defaults
+    - files
+    - handlers
+    - meta
+    - tasks
+    - templates
+    - vars
+  tags: [7_directory]
+
+- name: ---- create main.yml s files ----
+  ansible.builtin.file:
+    path: "{{ ansible_root }}/{{ project_name }}/roles/{{ project_name }}/{{ item }}/main.yml"
+    state: touch
+    mode: '0644'
+  with_items:
+    - defaults
+    - handlers
+    - meta
+    - tasks
+    - vars
+  tags: [create_main_yml]

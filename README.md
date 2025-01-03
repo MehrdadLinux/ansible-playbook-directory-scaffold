@@ -23,7 +23,9 @@ ansible-playbook-skeleton/
 │   │   ├── defaults/   # Default variables
 │   │   ├── meta/       # Role metadata
 ├── inventories/        # Inventory files (e.g., production, staging)
-|   ├── hosts/
+|   ├── hosts
+|   ├── production
+|   ├── staging
 ├── group_vars/         # Group-specific variables
 ├── host_vars/          # Host-specific variables
 ├── playbooks/          # Playbook YAML files
@@ -54,6 +56,8 @@ Ensure you have the following installed:
 Here’s an example of running a playbook:
 ```bash
 ansible-playbook -i inventories/production playbooks/site.yml
+ansible-playbook -i inventory/hosts myproject.yml -e "ansible_root=[Your_Path] project_name=[PlayBookName]"
+example : ansible-playbook -i inventory/hosts myproject.yml -e "ansible_root=/tmp/1 project_name=ansible_project"
 ```
 
 ## Contributing
