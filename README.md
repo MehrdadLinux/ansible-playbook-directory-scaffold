@@ -1,4 +1,10 @@
-# Ansible Playbook Skeleton
+<div align="center">
+
+![Wave divider](https://readme-svg-wave-divider-generator.vercel.app/wave?type=sine&width=1200&height=200&amplitude=40&frequency=2&layers=3&color_top=d93d37&color_bottom=0d1117&opacity=1&flip=true&gradient=true&mirror=true&animate=true&speed=6&text=Ansible&text_bottom=Playbook+Skeleton&text_color=ffffff&text_bottom_color=ff7070&text_size=102&text_bottom_size=31&text_style=bold&text_stroke_color=0d1117&text_stroke_width=10&text_scale_x=100&text_scale_y=100&text_x=50&text_y=45&text_gap=50&text_align=middle)
+<h1 align="center">
+    ${\color{red}Ansible}$ ${\color{green}Playbook }$ ${\color{red}Skeleton}$
+  <br>
+</h1>
 
 ## Overview
 Ansible Playbook Skeleton is a starter template designed to help you create Ansible playbooks with the recommended directory structure. This repository provides a solid foundation for organizing your playbooks and adhering to best practices, making your workflow more efficient and maintainable.
@@ -75,5 +81,5 @@ This project is licensed under the [MIT License](LICENSE).
 For questions or support, feel free to reach out to [MehrdadLinux@gmail.com] or create an issue in this repository.
 
 ---
-
+![Wave divider](https://readme-svg-wave-divider-generator.vercel.app/wave?type=sine&width=1200&height=70&amplitude=20&frequency=2&layers=3&color_top=000000&color_bottom=d93d37&opacity=1&flip=false&gradient=false&mirror=true&animate=true&speed=6&text=&text_bottom=&text_color=ffffff&text_bottom_color=ff7070&text_size=102&text_bottom_size=31&text_style=bold&text_stroke_color=0d1117&text_stroke_width=10&text_scale_x=100&text_scale_y=100&text_x=50&text_y=45&text_gap=50&text_align=middle)
 Happy automating with Ansible! 🎉
